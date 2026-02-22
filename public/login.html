@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="./styles.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front page</title>
+    
+</head>
+<body class="w-full h-full">
+    <div class="w-full h-[5.2rem] bg-white outline-1 outline-gray-100 drop-shadow-lg flex justify-normal px-5" >
+    <div class="h-full w-72 flex justify-normal ">
+        <div class="w-20 h-20 p-2">
+            <img src="img/mood_logo.png" class="w-full h-full" >
+        </div>
+        <p class="self-center  text-lg font-medium font-Robot">Mood Studios</p>
+    </div>
+    <div class="w-full flex justify-center items-center space-x-16 font-Roboto text-gray-600">
+        <a href="/public/index.html"  >Home</a>
+         <a href="/public/book_now.html" >Book now</a>
+          <a href="">About</a>
+    </div>
+    <div class="h-full w-72 flex justify-center items-center space-x-5">
+            <div class="cursor-pointer ">
+                 <img src="/public/icons/cart.gif"  class="w-10 h-10" alt="svg">
+            </div>
+            
+            <button class="bg-[#960ffa] w-27 h-10 rounded-md flex justify-center items-center space-x-2 pr-2 hover:bg-gray-400 cursor-pointer" >
+                <img src="/public/icons/profile.svg"  class="w-7 h-7" alt="svg">
+                <p class="text-white font-Roboto">Log in</p>
+            </button>
+      
+       
+    </div>
+    </div>
+<div class="w-full h-[calc(100vh-5.2rem)] bg-[#FAF0FA] flex justify-center  pt-14">
+    <div class="items-center flex flex-col space-y-4">
+          <div class="w-20 h-20 p-2"> <img src="img/mood_logo.png" class="w-full h-full" > </div>
+        <div>
+            <p class="text-center text-xl font-Roboto">Welcome to Mood Studios</p>
+            <p class="text-center text-sm text-gray-600">Sign in to manage your bookings!</p>
+        </div>
+        <div class="w-[22.2rem] h-[20.2rem] bg-white outline-1 outline-gray-100 rounded-2xl shadow-lg shadow-gray-400 flex items-center">
+            <!-- <div class="w-full flex justify-center ">
+                <div class="w-full h-8 mx-7 bg-gray-300 rounded-xl flex justify-center p-1 space-x-1">
+                <button class="w-full h-full bg-white rounded-xl flex justify-center items-center space-x-1 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="black"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg><p class="text-sm font-Roboto">Client LogIn</p></button>
+                <button class="w-full h-full rounded-xl flex justify-center items-center space-x-1 cursor-pointer hover:bg-white"><svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="black"><path d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Zm-80 160h160q17 0 28.5-11.5T600-360v-120q0-17-11.5-28.5T560-520v-40q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560v40q-17 0-28.5 11.5T360-480v120q0 17 11.5 28.5T400-320Zm40-200v-40q0-17 11.5-28.5T480-600q17 0 28.5 11.5T520-560v40h-80Z"/></svg><p class="text-sm font-Roboto">Admin LogIn</p></button>
+                
+                </div>
+            </div> -->
+           <div class="w-full space-y-4">
+             <div class="px-5 w-full">
+                <p class="ml-1 text-sm font-Roboto font-normal " >Email Address</p>
+                <input type="email" class="w-full h-8 bg-gray-200 rounded-lg focus:outline-none text-center font-Roboto text-sm" placeholder="your_email@gmail.com">
+            </div>
+             <div class="px-5 w-full">
+                <p class="ml-1 text-sm font-Roboto font-normal " >Password</p>
+                <input type="password" class="w-full h-8 bg-gray-200 rounded-lg focus:outline-none text-center font-Roboto text-sm" placeholder="********">
+            </div>
+           <div class="flex items-center justify-between w-full px-6">
+                <!-- Left: Remember me -->
+                <label class="flex items-center space-x-2 cursor-pointer">
+                    <input 
+                        type="checkbox" 
+                        class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+                    >
+                    <span class="text-sm text-gray-700 font-Roboto">Remember me</span>
+                </label>
+
+                <!-- Right: Forgot password -->
+                <a href="#" class="text-sm text-purple-600 hover:text-purple-700 font-medium">
+                    Forgot password?
+                </a>
+
+            </div>
+            <div class="px-6">
+                 <button class="bg-[#960ffa] w-full h-10 rounded-md flex justify-center items-center space-x-2 pr-2 hover:bg-gray-400 cursor-pointer" >
+                 <img src="/public/icons/profile.svg"  class="w-7 h-7" alt="svg">
+                <p class="text-white font-Roboto">Log in</p>
+            </button>
+            </div>
+            <div class="w-full h-8 flex justify-center"> <p class="text-sm">Dont have an account? <a href="#" class="text-purple-600 hover:text-purple-700 font-medium text-sm">Sign up</a></p></div>
+           </div>
+        </div>
+    <div>
+            
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
