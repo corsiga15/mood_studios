@@ -333,6 +333,9 @@
   .h-full {
     height: 100%;
   }
+  .min-h-\[calc\(100vh-5\.2rem\)\] {
+    min-height: calc(100vh - 5.2rem);
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -426,6 +429,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -446,6 +452,9 @@
   }
   .justify-start {
     justify-content: flex-start;
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -623,6 +632,9 @@
   }
   .pr-20 {
     padding-right: calc(var(--spacing) * 20);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
