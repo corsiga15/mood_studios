@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mood Studios - Booking &amp; Cart</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#a855f7",
+                        "background-light": "#fdf8ff",
+                        "background-dark": "#0f0715",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                    },
+                },
+            },
+        };
+        function toggleCart() {
+            const sidebar = document.getElementById('cartSidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('translate-x-full');
+            overlay.classList.toggle('hidden');
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-200">
+<header class="sticky top-0 z-40 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
+    <span class="material-icons-round">photo_camera</span>
+    </div>
+    <span class="text-xl font-bold tracking-tight">Mood Studios</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-8 font-medium">
+    <a class="hover:text-primary transition-colors" href="#">Home</a>
+    <a class="text-primary" href="#">Book now</a>
+    </nav>
+    <div class="flex items-center gap-4">
+    <button class="p-2 relative hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors" onclick="toggleCart()">
+    <span class="material-icons-round text-slate-600 dark:text-slate-300">shopping_cart</span>
+    <span class="absolute top-1 right-1 w-4 h-4 bg-primary text-[10px] text-white flex items-center justify-center rounded-full">2</span>
+    </button>
+    <button class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition-opacity">
+    <span class="material-icons-round text-lg">person</span>
+                        Log in
+                    </button>
+    </div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<div class="text-center mb-12">
+<h1 class="text-2xl font-bold mb-2">Our Services</h1>
+<p class="text-slate-500 dark:text-slate-400">Choose from our variety of photography packages designed for every occasion</p>
+</div>
+<div class="flex justify-center mb-12">
+<div class="bg-slate-100 dark:bg-slate-800/50 p-1 rounded-2xl flex flex-wrap justify-center gap-1">
+<button class="px-6 py-2 rounded-xl text-sm font-medium bg-white dark:bg-slate-700 shadow-sm">Self Portrait Basic</button>
+<button class="px-6 py-2 rounded-xl text-sm font-medium hover:bg-white/50 dark:hover:bg-slate-700/50">Self Portrait Pro</button>
+<button class="px-6 py-2 rounded-xl text-sm font-medium hover:bg-white/50 dark:hover:bg-slate-700/50">With Photographer</button>
+<button class="px-6 py-2 rounded-xl text-sm font-medium hover:bg-white/50 dark:hover:bg-slate-700/50">Studio Rent</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-[2rem] shadow-sm hover:shadow-xl transition-shadow group">
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+<span class="material-icons-round text-primary">auto_awesome</span>
+</div>
+<span class="bg-primary/5 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">15 Minutes</span>
+</div>
+<h3 class="text-xl font-bold mb-1">Keepsake</h3>
+<p class="text-primary font-bold text-lg mb-6">P550</p>
+<div class="space-y-4 text-sm text-slate-500 dark:text-slate-400 mb-8">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-base">group</span>
+<span>1 Pax + 1 Kid/Pet</span>
+</div>
+<ul class="space-y-2">
+<li class="flex items-start gap-2">
+<span class="material-icons-round text-sm mt-0.5">check_circle</span>
+<span>Unlimited 15 mins Self-shoot</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-icons-round text-sm mt-0.5">check_circle</span>
+<span>All Soft Copies</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-icons-round text-sm mt-0.5">check_circle</span>
+<span>5 Enhanced Copies</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-icons-round text-sm mt-0.5">check_circle</span>
+<span>1 Backdrop</span>
+</li>
+</ul>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all" onclick="toggleCart()">
+<span class="material-icons-round text-xl">add_shopping_cart</span>
+                    Add to cart
+                </button>
+</div>
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-[2rem] shadow-sm hover:shadow-xl transition-shadow group">
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+<span class="material-icons-round text-primary">auto_awesome</span>
+</div>
+<span class="bg-primary/5 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">15 Minutes</span>
+</div>
+<h3 class="text-xl font-bold mb-1">Keepsake</h3>
+<p class="text-primary font-bold text-lg mb-6">P550</p>
+<div class="space-y-4 text-sm text-slate-500 dark:text-slate-400 mb-8">
+<div class="flex items-center gap-2"><span class="material-icons-round text-base">group</span><span>1 Pax + 1 Kid/Pet</span></div>
+<ul class="space-y-2">
+<li class="flex items-start gap-2"><span class="material-icons-round text-sm mt-0.5">check_circle</span><span>Unlimited 15 mins Self-shoot</span></li>
+<li class="flex items-start gap-2"><span class="material-icons-round text-sm mt-0.5">check_circle</span><span>All Soft Copies</span></li>
+</ul>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all" onclick="toggleCart()">
+<span class="material-icons-round text-xl">add_shopping_cart</span>
+                    Add to cart
+                </button>
+</div>
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-[2rem] shadow-sm hover:shadow-xl transition-shadow group">
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+<span class="material-icons-round text-primary">auto_awesome</span>
+</div>
+<span class="bg-primary/5 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">15 Minutes</span>
+</div>
+<h3 class="text-xl font-bold mb-1">Keepsake</h3>
+<p class="text-primary font-bold text-lg mb-6">P550</p>
+<div class="space-y-4 text-sm text-slate-500 dark:text-slate-400 mb-8">
+<div class="flex items-center gap-2"><span class="material-icons-round text-base">group</span><span>1 Pax + 1 Kid/Pet</span></div>
+<ul class="space-y-2">
+<li class="flex items-start gap-2"><span class="material-icons-round text-sm mt-0.5">check_circle</span><span>Unlimited 15 mins Self-shoot</span></li>
+<li class="flex items-start gap-2"><span class="material-icons-round text-sm mt-0.5">check_circle</span><span>All Soft Copies</span></li>
+</ul>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all" onclick="toggleCart()">
+<span class="material-icons-round text-xl">add_shopping_cart</span>
+                    Add to cart
+                </button>
+</div>
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-[2rem] shadow-sm hover:shadow-xl transition-shadow group">
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+<span class="material-icons-round text-primary">auto_awesome</span>
+</div>
+<span class="bg-primary/5 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">15 Minutes</span>
+</div>
+<h3 class="text-xl font-bold mb-1">Keepsake</h3>
+<p class="text-primary font-bold text-lg mb-6">P550</p>
+<div class="space-y-4 text-sm text-slate-500 dark:text-slate-400 mb-8">
+<div class="flex items-center gap-2"><span class="material-icons-round text-base">group</span><span>1 Pax + 1 Kid/Pet</span></div>
+<ul class="space-y-2">
+<li class="flex items-start gap-2"><span class="material-icons-round text-sm mt-0.5">check_circle</span><span>Unlimited 15 mins Self-shoot</span></li>
+<li class="flex items-start gap-2"><span class="material-icons-round text-sm mt-0.5">check_circle</span><span>All Soft Copies</span></li>
+</ul>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all" onclick="toggleCart()">
+<span class="material-icons-round text-xl">add_shopping_cart</span>
+                    Add to cart
+                </button>
+</div>
+</div>
+</main>
+<div class="fixed inset-0 bg-slate-950/40 backdrop-blur-sm z-50 hidden transition-all" id="overlay" onclick="toggleCart()"></div>
+<aside class="fixed top-0 right-0 h-screen w-full sm:w-[450px] bg-white dark:bg-slate-900 z-[60] shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col" id="cartSidebar">
+<div class="p-6 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-icons-round text-primary">shopping_bag</span>
+<h2 class="text-xl font-bold">Your Cart</h2>
+<span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs px-2 py-0.5 rounded-full font-bold">2 Items</span>
+</div>
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors" onclick="toggleCart()">
+<span class="material-icons-round text-slate-400">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto p-6 space-y-6 no-scrollbar">
+<div class="flex gap-4 p-4 bg-slate-50 dark:bg-slate-800/40 rounded-3xl border border-transparent hover:border-primary/20 transition-colors">
+<div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0">
+<span class="material-icons-round text-3xl text-primary">auto_awesome</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-bold">Keepsake Package</h4>
+<button class="text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-icons-round text-lg">delete_outline</span>
+</button>
+</div>
+<p class="text-xs text-slate-500 mb-3">15 Minutes Self-shoot</p>
+<div class="flex items-center justify-between">
+<span class="font-bold text-primary">P550</span>
+<div class="flex items-center bg-white dark:bg-slate-700 rounded-full border border-slate-200 dark:border-slate-600 p-1">
+<button class="w-7 h-7 flex items-center justify-center hover:text-primary"><span class="material-icons-round text-sm">remove</span></button>
+<span class="w-8 text-center text-sm font-bold">1</span>
+<button class="w-7 h-7 flex items-center justify-center hover:text-primary"><span class="material-icons-round text-sm">add</span></button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex gap-4 p-4 bg-slate-50 dark:bg-slate-800/40 rounded-3xl border border-transparent hover:border-primary/20 transition-colors">
+<div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0">
+<span class="material-icons-round text-3xl text-primary">camera</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-bold">Studio Rent Basic</h4>
+<button class="text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-icons-round text-lg">delete_outline</span>
+</button>
+</div>
+<p class="text-xs text-slate-500 mb-3">1 Hour Space Only</p>
+<div class="flex items-center justify-between">
+<span class="font-bold text-primary">P1,200</span>
+<div class="flex items-center bg-white dark:bg-slate-700 rounded-full border border-slate-200 dark:border-slate-600 p-1">
+<button class="w-7 h-7 flex items-center justify-center hover:text-primary"><span class="material-icons-round text-sm">remove</span></button>
+<span class="w-8 text-center text-sm font-bold">1</span>
+<button class="w-7 h-7 flex items-center justify-center hover:text-primary"><span class="material-icons-round text-sm">add</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
+    <div class="space-y-3 mb-6">
+    <div class="flex justify-between text-slate-500 dark:text-slate-400">
+    <span>Subtotal</span>
+    <span>P1,750.00</span>
+    </div>
+    <div class="flex justify-between text-slate-500 dark:text-slate-400">
+    <span>Tax (0%)</span>
+    <span>P0.00</span>
+    </div>
+    <div class="flex justify-between text-xl font-bold pt-3 border-t border-slate-200 dark:border-slate-800">
+    <span>Total</span>
+    <span class="text-primary">P1,750.00</span>
+    </div>
+    </div>
+    <button class="w-full bg-primary text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-3 hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-[0.98]">
+                    Proceed to Checkout
+                    <span class="material-icons-round">arrow_forward</span>
+    </button>
+    <p class="text-center text-[10px] text-slate-400 mt-4 uppercase tracking-widest font-bold">Secure Checkout Powered by Mood Studios</p>
+</div>
+</aside>
+
+</body></html>
