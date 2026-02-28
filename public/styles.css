@@ -497,6 +497,9 @@
   .w-\[22\.2rem\] {
     width: 22.2rem;
   }
+  .w-auto {
+    width: auto;
+  }
   .w-fit {
     width: fit-content;
   }

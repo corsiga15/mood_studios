@@ -21,20 +21,20 @@
             <a href="/public/book_now_1.html" >Book now</a>
         </nav>
         <div class="h-full w-72 flex justify-center items-center space-x-5">
-                <div class="cursor-pointer ">
+                <div class="cursor-pointer "onclick="toggleCart()">
                     <img src="/public/icons/cart.gif"  class="w-10 h-10" alt="svg">
                 </div>
                 
-                <button class="bg-[#960ffa] w-27 h-10 rounded-md flex justify-center items-center space-x-2 pr-2 hover:bg-gray-400 cursor-pointer" >
+                <button class="bg-[#960ffa] w-27 h-10 rounded-md flex justify-center items-center space-x-2 pr-2 hover:bg-gray-400 cursor-pointer"  onclick="window.location.href='login.html'">
                     <img src="/public/icons/profile.svg"  class="w-7 h-7" alt="svg">
-                    <p class="text-white font-Roboto" onclick="window.location.href='login.html'">Log in</p>
+                    <p class="text-white font-Roboto">Log in</p>
                 </button>
         
         
         </div>
      </div>
     </div>
-<div class="w-full min-h-[calc(100vh-5.2rem)] bg-[#FAF0FA]">
+<div class="w-full min-h-[calc(100vh-5.2rem)] bg-[#FAF0FA] px-10">
 <div class="w-full space-y-6 pt-10">
     <div class="text-center space-y-2">
         <p class="font-Roboto">Our Services</p>
@@ -265,7 +265,7 @@
     </div>
     
     <div class="fixed inset-0 bg-slate-950/35 backdrop-blur-[3px] z-50 h-screen transition-all hidden" id="overlay" onclick="toggleCart()"></div>
-    <aside class="fixed right-0 top-0 h-screen w-115 bg-white z-60 translate-x-full" onclick="toggleCart()" id="cartSidebar">
+    <aside class="fixed right-0 top-0 h-screen w-115 bg-white z-60 translate-x-full"  id="cartSidebar">
         <div class="w-full flex justify-center items-center border-b border-gray-400 h-28">
             <div class="flex justify-normal w-1/2 space-x-3 px-8">
                 <img src="/public/icons/bag.png" class="h-6 w-6">
@@ -295,12 +295,62 @@
                     </div>
                     <div class="w-1/2 h-full mr-4 mt-5 space-y-5">
                        <div class="w-full flex justify-end "> 
-                        <img src="/public/icons/trash.png" class="w-7 h-7" alt=""></div>
+                        <img src="/public/icons/trash.png" class="w-7 h-7 cursor-pointer" alt=""></div>
                         <div class="w-full flex items-center"> 
                         <div class="w-25 h-8 bg-white rounded-2xl shadow-sm shadow-gray-300 flex justify-between items-center px-3">
-                            <img src="/public/icons/add.svg" class="w-4 h-4" alt="">
+                            <img src="/public/icons/add.svg" class="w-4 h-4 cursor-pointer" alt="">
                             <p class="font-Roboto text-md font-bold">1</p>
-                            <img src="/public/icons/remove.svg" class="w-4 h-4" alt="">
+                            <img src="/public/icons/remove.svg" class="w-4 h-4 cursor-pointer" alt="">
+                        </div>
+                        </div>
+
+                    </div>
+
+            </div>
+              <div class="w-full h-30 bg-[#fbfcfd] rounded-xl flex justify-center items-center hover:border hover:border-gray-400">
+                    <div class="w-1/4 flex justify-center items-center pl-2">
+                        <div class=" bg-[#f0e6ff] w-15 h-15 rounded-xl flex justify-center items-center">
+                        <img src="/public/icons/star.svg" class="w-8 h-8">
+                        </div>
+                    </div>
+                    <div class="w-full font-Google-Sans ml-2 ">
+                        <h3 class="text-lg font-bold">Keepsake Package</h3>
+                        <p class="text-sm">15 Minutes Self-shoot</p>
+                        <p class="mt-2 text-md font-bold text-[#9814fa]">P550</p>
+                    </div>
+                    <div class="w-1/2 h-full mr-4 mt-5 space-y-5">
+                       <div class="w-full flex justify-end "> 
+                        <img src="/public/icons/trash.png" class="w-7 h-7 cursor-pointer" alt=""></div>
+                        <div class="w-full flex items-center"> 
+                        <div class="w-25 h-8 bg-white rounded-2xl shadow-sm shadow-gray-300 flex justify-between items-center px-3">
+                            <img src="/public/icons/add.svg" class="w-4 h-4 cursor-pointer" alt="">
+                            <p class="font-Roboto text-md font-bold">1</p>
+                            <img src="/public/icons/remove.svg" class="w-4 h-4 cursor-pointer" alt="">
+                        </div>
+                        </div>
+
+                    </div>
+
+            </div>
+              <div class="w-full h-30 bg-[#fbfcfd] rounded-xl flex justify-center items-center hover:border hover:border-gray-400">
+                    <div class="w-1/4 flex justify-center items-center pl-2">
+                        <div class=" bg-[#f0e6ff] w-15 h-15 rounded-xl flex justify-center items-center">
+                        <img src="/public/icons/star.svg" class="w-8 h-8">
+                        </div>
+                    </div>
+                    <div class="w-full font-Google-Sans ml-2 ">
+                        <h3 class="text-lg font-bold">Keepsake Package</h3>
+                        <p class="text-sm">15 Minutes Self-shoot</p>
+                        <p class="mt-2 text-md font-bold text-[#9814fa]">P550</p>
+                    </div>
+                    <div class="w-1/2 h-full mr-4 mt-5 space-y-5">
+                       <div class="w-full flex justify-end "> 
+                        <img src="/public/icons/trash.png" class="w-7 h-7 cursor-pointer" alt=""></div>
+                        <div class="w-full flex items-center"> 
+                        <div class="w-25 h-8 bg-white rounded-2xl shadow-sm shadow-gray-300 flex justify-between items-center px-3">
+                            <img src="/public/icons/add.svg" class="w-4 h-4 cursor-pointer" alt="">
+                            <p class="font-Roboto text-md font-bold">1</p>
+                            <img src="/public/icons/remove.svg" class="w-4 h-4 cursor-pointer" alt="">
                         </div>
                         </div>
 
@@ -308,9 +358,6 @@
 
             </div>
 
-
-
-           
         </div>
         <div class="bg-[#fbfcfd] w-full h-full mt-10 shadow-gray-600 shadow-sm px-10 pt-2">
             <div class="w-full font-Roboto text-gray-600 space-y-1 text-md border-b border-gray-300 pb-2">
