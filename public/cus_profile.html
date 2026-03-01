@@ -12,26 +12,26 @@
     <div class="max-w-7xl w-full mx-auto flex justify-normal">
             <div class="h-full w-auto flex justify-normal ">
                 <div class="w-20 h-20 p-2">
-                    <img src="../public/img/mood_logo.png" class="w-full h-full" >
+                    <img src="img/mood_logo.png" class="w-full h-full" >
                 </div>
                 <p class="self-center  text-lg font-medium font-Google-Sans text-nowrap">Mood Studios</p>
          </div>
         <nav class="w-full flex justify-center items-center space-x-16 font-Roboto text-gray-600">
-            <a href="index.html"  >Home</a>
-            <a href="book_now_1.html" >Book now</a>
+            <a href="/public/index.html"  >Home</a>
+            <a href="/public/book_now_1.html" >Book now</a>
         </nav>
         <div class="h-full w-auto flex justify-center items-center space-x-5">
 
-                <img src="../public/icons/cartgray600.svg" class="cursor-pointer hover:shadow-md hover:shadow-gray-400 p-1 rounded-lg" onclick="toggleCart()">
+                <img src="/public/icons/cartgray600.svg" class="cursor-pointer hover:shadow-md hover:shadow-gray-400 p-1 rounded-lg" onclick="toggleCart()">
                 <button class="bg-white w-auto px-5 h-8 rounded-md flex justify-center items-center space-x-1 cursor-pointer shadow shadow-gray-500 hover:bg-gray-300"  >
-                    <img src="../public/icons/dashboardgray600.svg"  class="w-5 h-5" alt="svg">
+                    <img src="/public/icons/dashboardgray600.svg"  class="w-5 h-5" alt="svg">
                     <p class="text-gray-600 font-Roboto text-sm">Dashboard</p>
                     
                 </button>
                 
                 <button class="bg-white w-auto px-5 h-8 rounded-md flex justify-center items-center space-x-1 hover:border hover:border-gray-400 cursor-pointer"  onclick="window.location.href='login.html'">
                     <p class="text-gray-600 font-Roboto text-sm text-nowrap">Log Out</p>
-                    <img src="../public/icons/exit.svg"  class="w-6 h-6" alt="svg">
+                    <img src="/public/icons/exit.svg"  class="w-6 h-6" alt="svg">
                 </button>
 
         </div>
@@ -48,17 +48,15 @@
     <div class="w-full mt-5 ">
             <div class="flex gap-6 w-full justify-center">
             <!-- Card 1 -->
-            <div class="w-60 h-32 rounded-xl p-6 pt-4 text-white 
-                        bg-linear-to-r from-purple-500 via-pink-500 to-red-400 
-                        shadow-md select-none hover:shadow-lg transition">
+            <div class="w-60 h-32 bg-white rounded-xl p-6 pt-4 border border-gray-200 shadow-sm hover:shadow-md transition cursor-pointer"  onclick="window.location.href='cus_dashboard.html'">
 
             <div class="mb-4">
                 <!-- Camera Icon -->
-                <img src="../public/icons/camera.svg" class="w-6 h-6">
+                <img src="../public/icons/camera_2p.svg" class="w-6 h-6">
             </div>
 
-            <h2 class="text-lg font-semibold">Book New Session</h2>
-            <p class="text-[11px] text-white/80 mt-1">
+            <h2 class="text-lg font-semibold text-gray-800">Book New Session</h2>
+            <p class="text-[11px] text-gray-500 mt-1">
                 Schedule your next photoshoot
             </p>
             </div>
@@ -89,15 +87,17 @@
             </p>
             </div>
             <!-- Card 4 -->
-            <div class="w-60 h-32 bg-white rounded-xl p-6 pt-4 border border-gray-200 shadow-sm hover:shadow-md transition cursor-pointer" onclick="window.location.href='cus_profile.html'">
+            <div class="w-60 h-32 rounded-xl p-6 pt-4 text-white 
+                        bg-linear-to-r from-purple-500 via-pink-500 to-red-400 
+                        shadow-md hover:shadow-lg transition select-none">
 
             <div class="mb-4 text-purple-500">
                 <!-- Profile Icon-->
-            <img src="../public/icons/profile_purple.svg" class="w-6 h-6">
+            <img src="../public/icons/profile_2.svg" class="w-6 h-6">
             </div>
 
-            <h2 class="text-lg font-semibold text-gray-800">Profile</h2>
-            <p class="text-sm text-gray-500 mt-1">
+            <h2 class="text-lg font-semibold text-white">Profile</h2>
+            <p class="text-sm text-white/80 mt-1">
             Edit Your Profile
             </p>
             </div>
